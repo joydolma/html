@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Site with GIF Background</title>
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fullscreen GIF background */
+    #gif-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      opacity: 0.3; /* Adjust transparency as needed */
+    }
+
+    /* Content wrapper */
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 50px auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Header styling */
+    header {
+      background-color: rgba(76, 175, 80, 0.8); /* Slightly transparent header */
+      padding: 20px;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    /* Video player with transparent background */
+    .media-player {
+      position: relative;
+      background: rgba(0, 0, 0, 0.5); /* Transparent background for the player */
+      border: none;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .media-player video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Add some hover effects to links */
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fullscreen GIF background -->
+  <img id="gif-bg" src="background.gif" alt="GIF Background">
+
+  <div class="content">
+    <header>
+      <h1>Static Page with GIF Background</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>About the App</h2>
+        <p>This is a static representation of the interactive app hosted on 777joyce.streamlit.app. This version includes a cool GIF background and some CSS styling.</p>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>Interactive design (with GIF background)</li>
+          <li>Responsive layout</li>
+          <li>Enhanced visual experience</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Media Player with Transparent Background</h2>
+        <p>This static version includes media elements to make the design more engaging while keeping it lightweight.</p>
+
+        <!-- Video Player with transparent background -->
+        <div class="media-player">
+          <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video player.
+          </video>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 - Static version of 777Joyce</p>
+    </footer>
+  </div>
+
+</body>
+</html>
